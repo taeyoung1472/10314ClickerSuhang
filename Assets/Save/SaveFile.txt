@@ -1,0 +1,43 @@
+﻿{
+    "userName": "Taeyoung1472",
+    "electric": 500,
+    "ePc": 1,
+    "generatorList": [
+        {
+            "name": "풍력발전기",
+            "amount": 0,
+            "ePs": 1,
+            "price": 10
+        },
+        {
+            "name": "모터발전기",
+            "amount": 0,
+            "ePs": 10,
+            "price": 100
+        },
+        {
+            "name": "태양열발전기",
+            "amount": 0,
+            "ePs": 100,
+            "price": 1000
+        },
+        {
+            "name": "수력발전기",
+            "amount": 0,
+            "ePs": 1000,
+            "price": 10000
+        },
+        {
+            "name": "지력발전기",
+            "amount": 0,
+            "ePs": 10000,
+            "price": 100000
+        },
+        {
+            "name": "무한동력",
+            "amount": 0,
+            "ePs": 100000,
+            "price": 1000000
+        }
+    ]
+}
