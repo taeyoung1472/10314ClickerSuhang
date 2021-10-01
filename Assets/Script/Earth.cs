@@ -10,6 +10,7 @@ public class Earth : MonoBehaviour
     [SerializeField] private Text[] text;
     [SerializeField] private Image image;
     [SerializeField] private Button[] button;
+    [SerializeField] private bool[] isPurchase;
     int index = 0;
     private void Start()
     {
@@ -18,17 +19,19 @@ public class Earth : MonoBehaviour
     }
     private void Update()
     {
-        for(int i = 0; i < Epc.Length; i++)
+        for(int i = 0; i < 13; i++)
         {
-            if(GameManager.Instance.CurrentUser.electric < price[i])
             {
-                text[i].color = Color.gray;
-                button[i].interactable = false;
-            }
-            else
-            {
-                text[i].color = Color.black;
-                button[i].interactable = true;
+                if (GameManager.Instance.CurrentUser.electric < price[i])
+                {
+                    text[i].color = Color.gray;
+                    button[i].interactable = false;
+                }
+                else
+                {
+                    text[i].color = Color.black;
+                    button[i].interactable = true;
+                }
             }
         }
     }
